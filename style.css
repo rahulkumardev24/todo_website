@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("todobackground.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  background: rgba(255, 255, 255, 0.458);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
+  width: 60vh;
+  text-align: center;
+}
+
+/* Input Field & Button */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.delete {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: rgb(80, 249, 133);
+}
+
+img {
+  height: 20px;
+  width: 20px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
